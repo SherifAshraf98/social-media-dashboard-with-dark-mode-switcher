@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap stylesheet link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="upper-info">
+      <div class="card upper-info-card">
+        <div class="card-body">
+          <h5 class="card-title">Social Media Dashboard</h5>
+          <p class="card-text">Total Followers: 23,004</p>
+          <hr>
+          <div class="toggler">
+            <p class="card-text dark-mode-text">Dark Mode</p>
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+
+      <div class="social-followers">
+        <div class="card-deck">
+
+          <div class="col-md-3 card-padding">
+            <div class="card followers-card h-100 text-center">
+              <div class="card-header-social facebook-card-header">
+              </div>
+              <div class="card-body">
+                <p class="card-text social-account"> <img class="social-icon" src="images/icon-facebook.svg" alt="Facebook icon"> @nathanf</p>
+                <h5 class="card-title followers-number">1987</h5>
+                <p class="card-text followers-text">Followers</p>
+                <p class="card-text arrow-text arrow-text-green"> <img src="images/icon-up.svg" alt="Up arrow"> 12 Today</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 card-padding">
+            <div class="card followers-card h-100 text-center">
+              <div class="card-header-social twitter-card-header">
+              </div>
+
+              <div class="card-body">
+                <p class="card-text social-account"> <img class="social-icon" src="images/icon-twitter.svg" alt="Facebook icon"> @nathanf</p>
+                <h5 class="card-title followers-number">1044</h5>
+                <p class="card-text followers-text">Followers</p>
+                <p class="card-text arrow-text arrow-text-green"> <img src="images/icon-up.svg" alt="Up arrow"> 99 Today</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 card-padding">
+            <div class="card followers-card h-100 text-center">
+              <div class="card-header-social instagram-card-header">
+              </div>
+              <div class="card-body">
+                <p class="card-text social-account"> <img class="social-icon" src="images/icon-instagram.svg" alt="Facebook icon"> @nathanf</p>
+                <h5 class="card-title followers-number">11K</h5>
+                <p class="card-text followers-text">Followers</p>
+                <p class="card-text arrow-text arrow-text-green"> <img src="images/icon-up.svg" alt="Up arrow"> 1099 Today</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 card-padding">
+            <div class="card followers-card h-100 text-center">
+              <div class="card-header-social youtube-card-header">
+              </div>
+              <div class="card-body">
+                <p class="card-text social-account"> <img class="social-icon" src="images/icon-youtube.svg" alt="Facebook icon"> @nathanf</p>
+                <h5 class="card-title followers-number">8239</h5>
+                <p class="card-text followers-text">Subscribers</p>
+                <p class="card-text arrow-text arrow-text-red"> <img src="images/icon-down.svg" alt="Up arrow"> 12 Today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview">
+        <h1 class="overview-title">Overview - Today</h1>
+      </div>
+      <div class="card-deck daily-stats">
+
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Page Views</p>
+              <img class="social-stats-icon" src="images/icon-facebook.svg" alt="Facebook icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">87</p>
+              <p class="card-text arrow-text arrow-text-green stats-percentage"> <img src="images/icon-up.svg" alt="Up arrow"> 3%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Likes</p>
+              <img class="social-stats-icon" src="images/icon-facebook.svg" alt="Facebook icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">52</p>
+              <p class="card-text arrow-text arrow-text-red stats-percentage"> <img src="images/icon-down.svg" alt="Down arrow"> 2%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Likes</p>
+              <img class="social-stats-icon" src="images/icon-instagram.svg" alt="instagram icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">5462</p>
+              <p class="card-text arrow-text arrow-text-green stats-percentage"> <img src="images/icon-up.svg" alt="Up arrow"> 2257%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Profile Views</p>
+              <img class="social-stats-icon" src="images/icon-instagram.svg" alt="instagram icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">52K</p>
+              <p class="card-text arrow-text arrow-text-green stats-percentage"> <img src="images/icon-up.svg" alt="Up arrow"> 1375%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Retweets</p>
+              <img class="social-stats-icon" src="images/icon-twitter.svg" alt="Twitter icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">117</p>
+              <p class="card-text arrow-text arrow-text-green stats-percentage"> <img src="images/icon-up.svg" alt="Up arrow"> 303%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Likes</p>
+              <img class="social-stats-icon" src="images/icon-twitter.svg" alt="Twitter icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">507</p>
+              <p class="card-text arrow-text arrow-text-green stats-percentage"> <img src="images/icon-up.svg" alt="Up arrow"> 553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Likes</p>
+              <img class="social-stats-icon" src="images/icon-youtube.svg" alt="Youtube icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">107</p>
+              <p class="card-text arrow-text arrow-text-red stats-percentage"> <img src="images/icon-down.svg" alt="Down arrow"> 19%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 card-padding">
+          <div class="card stats-card h-100 text-center">
+            <div class="card-header-stats">
+              <p class="card-text social-stats-name">Total Views</p>
+              <img class="social-stats-icon" src="images/icon-youtube.svg" alt="Youtube icon">
+            </div>
+            <div class="card-body stats-card-body">
+              <p class="card-text stats-number">1407</p>
+              <p class="card-text arrow-text arrow-text-red stats-percentage"> <img src="images/icon-down.svg" alt="Down arrow"> 12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sherif Ashraf</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

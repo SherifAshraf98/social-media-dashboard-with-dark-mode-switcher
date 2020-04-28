@@ -1,0 +1,300 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.upper-info-card {
+  background-color: #F5F7FF;
+  border-style: none;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 30px;
+  margin-bottom: -40px;
+}
+
+.upper-info-card .card-title {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 3px;
+}
+
+.upper-info-card hr {
+  border-width: 1.2px;
+  border-color: #b1b3bc;
+}
+
+.upper-info-card .card-text {
+  font-weight: bold;
+  color: #7c7f8d;
+  font-size: 13px;
+  display: inline;
+}
+
+/* Followers Social Cards CSS */
+.followers-card {
+  background-color: #F0F2FA;
+  border-style: none;
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+}
+.followers-card:hover{
+  background-color: #e1e3f0;
+}
+.card-header-social {
+  height: 5px;
+  border-radius: 8px 8px 0 0;
+}
+
+.facebook-card-header {
+  background-color: #1CA0F2;
+}
+
+.twitter-card-header {
+  background-color: #00BFFF;
+}
+
+.instagram-card-header {
+  background-image: linear-gradient(to right, #FDC468, #DF4996);
+}
+
+.youtube-card-header {
+  background-color: #C4032A;
+}
+
+.card-body {
+  padding: 25px 10% 40px;
+}
+
+.social-account {
+  font-weight: bold;
+  color: #7c7f8d;
+  font-size: 11px;
+}
+
+.social-icon {
+  margin-right: 5px;
+}
+
+.followers-number {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0;
+}
+
+.followers-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #b1b3bc;
+  font-size: 10px;
+}
+
+.arrow-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.arrow-text-green {
+  color: #1DB489;
+}
+
+.arrow-text-red {
+  color: #DC414C;
+}
+/*Overview*/
+.overview-title{
+  font-weight: bold;
+  color: #7c7f8d;
+  font-size: 18px;
+  margin: 10px 0 20px 26px;
+}
+/* Stats Cards CSS */
+.stats-card {
+  background-color: #F0F2FA;
+  border-style: none;
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 30px;
+}
+.stats-card:hover{
+  background-color: #e1e3f0;
+}
+.stats-card-body {
+  padding: 0;
+  position: relative;
+}
+
+.social-stats-name {
+  float: left;
+  font-weight: bold;
+  color: #7c7f8d;
+  font-size: 12px;
+}
+
+.social-stats-icon {
+  float: right;
+}
+
+.stats-number {
+  float: left;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.stats-percentage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main-container{
+  padding: 0 10%;
+}
+.upper-info .card-body{
+  padding-left: 10%;
+}
+.card-padding{
+  padding: 0;
+  margin-bottom: 20px;
+}
+/*Toggler CSS*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 60px;
+  right: 10%;
+}
+.theme-switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 50px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 17px;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(#378FE6,#3EDA82) ;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Dark Mode Classes */
+.dark-mode-background{
+  background-color: #1E202A;
+}
+.upper-card-dark-mode-background{
+  background-color: #1F212E;
+}
+.cards-dark-mode-background{
+  background-color: #252A41;
+}
+.cards-dark-mode-background:hover{
+  background-color: #333a56;
+}
+.text-dark-mode{
+  color: #FFFFFF;
+}
+
+@media screen and (min-width:768px){
+  .followers-card, .stats-card {
+    width: 90%;
+  }
+  .upper-info-card .card-title {
+    font-size: 30px;
+  }
+  .upper-info-card hr {
+    display: none;
+  }
+  .followers-number {
+    font-size: 35px;
+  }
+  .followers-text {
+    letter-spacing: 3px;
+    font-size: 7px;
+  }
+  .social-account {
+    font-size: 8px;
+  }
+  .social-stats-name {
+    font-size: 9px;
+  }
+  .stats-number {
+    font-size: 27px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .social-stats-icon,.social-icon {
+    width: 13px;
+  }
+  .dark-mode-text{
+    position: relative;
+    left: 78%;
+  }
+}
+@media screen and (min-width:1366px){
+  .followers-number {
+    font-size: 50px;
+  }
+  .followers-text {
+    letter-spacing: 5px;
+    font-size: 10px;
+  }
+  .social-account {
+    font-size: 12px;
+  }
+  .social-stats-name {
+    font-size: 13px;
+  }
+  .stats-number {
+    font-size: 30px;
+    width: auto;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .social-stats-icon,.social-icon {
+    width: auto;
+  }
+  .dark-mode-text{
+    position: relative;
+    left: 87%;
+  }
+
+}
